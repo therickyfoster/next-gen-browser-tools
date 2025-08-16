@@ -1,0 +1,765 @@
+{
+  "catalog_metadata": {
+    "version": "1.0",
+    "last_updated": "2025-08-15",
+    "total_tools": 24,
+    "categories": 10,
+    "methodology": "Evidence-based evaluation with verified performance claims"
+  },
+  "tools": [
+    {
+      "id": "compute_toys",
+      "name": "Compute.toys",
+      "url": "https://compute.toys/",
+      "category": "Scientific Computing",
+      "subcategory": "Physics & Engineering",
+      "one_line_purpose": "GPU-accelerated physics simulations and mathematical visualizations",
+      "audiences": ["scientists", "educators", "researchers"],
+      "key_capabilities": [
+        "WebGPU compute shaders for fluid dynamics",
+        "Real-time particle systems (100k+ particles)",
+        "Interactive parameter manipulation",
+        "Community-shared simulation gallery"
+      ],
+      "tech_stack": ["WebGPU", "WGSL", "Canvas API"],
+      "performance_notes": "60fps with 100k+ particles on modern GPUs",
+      "performance_source": "https://compute.toys/examples",
+      "offline_pwa": {
+        "offline_capable": false,
+        "pwa_installable": false,
+        "storage_strategy": "browser_cache"
+      },
+      "privacy_posture": {
+        "data_processing": "client_side_only",
+        "telemetry": "none",
+        "external_requests": "none"
+      },
+      "accessibility": {
+        "wcag_level": "A",
+        "keyboard_navigation": true,
+        "screen_reader": false,
+        "rtl_support": false
+      },
+      "licensing": {
+        "type": "open_source",
+        "license": "MIT",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": ["webgpu"],
+        "sandboxing": "browser_sandbox"
+      },
+      "safety_considerations": [
+        "Research-only flag for advanced physics demos",
+        "No unsafe parameter ranges"
+      ],
+      "maturity": {
+        "stage": "stable",
+        "last_release": "2024-05",
+        "breaking_changes": false
+      },
+      "footprint": {
+        "initial_download": "15MB",
+        "lazy_loading": true,
+        "wasm_size": "8MB"
+      },
+      "ratings": {
+        "capability": 5,
+        "ux": 4,
+        "privacy": 4,
+        "accessibility": 3,
+        "offline_readiness": 1
+      },
+      "tags": ["cad", "engineering", "collaboration", "cloud"]
+    },
+    {
+      "id": "vs_code_web",
+      "name": "VS Code for the Web",
+      "url": "https://vscode.dev/",
+      "category": "Productivity",
+      "subcategory": "Development",
+      "one_line_purpose": "Full Visual Studio Code editor in browser",
+      "audiences": ["developers", "students", "technical_writers"],
+      "key_capabilities": [
+        "Syntax highlighting for 100+ languages",
+        "Extensions support",
+        "Git integration",
+        "Remote development",
+        "Terminal access"
+      ],
+      "tech_stack": ["TypeScript", "WebAssembly", "WebWorkers"],
+      "performance_notes": "Near-desktop performance, extension compatibility",
+      "performance_source": "https://code.visualstudio.com/blogs/2021/10/20/vscode-dev",
+      "offline_pwa": {
+        "offline_capable": true,
+        "pwa_installable": true,
+        "storage_strategy": "local_filesystem_api"
+      },
+      "privacy_posture": {
+        "data_processing": "local_with_optional_sync",
+        "telemetry": "configurable",
+        "external_requests": "extensions_sync_optional"
+      },
+      "accessibility": {
+        "wcag_level": "AAA",
+        "keyboard_navigation": true,
+        "screen_reader": true,
+        "rtl_support": true
+      },
+      "licensing": {
+        "type": "open_source",
+        "license": "MIT",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": [],
+        "sandboxing": "browser_sandbox"
+      },
+      "safety_considerations": [
+        "Extension validation",
+        "Security scanning",
+        "Workspace isolation"
+      ],
+      "maturity": {
+        "stage": "production",
+        "last_release": "2025-08",
+        "breaking_changes": false
+      },
+      "footprint": {
+        "initial_download": "5MB",
+        "lazy_loading": true,
+        "wasm_size": "2MB"
+      },
+      "ratings": {
+        "capability": 5,
+        "ux": 5,
+        "privacy": 4,
+        "accessibility": 5,
+        "offline_readiness": 5
+      },
+      "tags": ["ide", "development", "git", "extensions"]
+    },
+    {
+      "id": "jupyter_lite",
+      "name": "JupyterLite",
+      "url": "https://jupyterlite.readthedocs.io/",
+      "category": "Education",
+      "subcategory": "Data Science",
+      "one_line_purpose": "Full Jupyter notebook environment running entirely in browser",
+      "audiences": ["educators", "students", "data_scientists"],
+      "key_capabilities": [
+        "Python kernel via Pyodide",
+        "Interactive widgets and visualization",
+        "Multiple language kernels",
+        "GitHub integration",
+        "Real-time collaboration"
+      ],
+      "tech_stack": ["WebAssembly", "Pyodide", "WebWorkers", "TypeScript"],
+      "performance_notes": "Near-native Jupyter experience with WASM performance",
+      "performance_source": "https://jupyterlite.readthedocs.io/en/latest/quickstart/index.html",
+      "offline_pwa": {
+        "offline_capable": true,
+        "pwa_installable": true,
+        "storage_strategy": "browser_storage_notebooks"
+      },
+      "privacy_posture": {
+        "data_processing": "local_only",
+        "telemetry": "none",
+        "external_requests": "optional_github_sync"
+      },
+      "accessibility": {
+        "wcag_level": "AA",
+        "keyboard_navigation": true,
+        "screen_reader": true,
+        "rtl_support": false
+      },
+      "licensing": {
+        "type": "open_source",
+        "license": "BSD 3-clause",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": [],
+        "sandboxing": "wasm_sandbox"
+      },
+      "safety_considerations": [
+        "Code execution sandboxing",
+        "No server-side execution",
+        "Academic use recommended"
+      ],
+      "maturity": {
+        "stage": "stable",
+        "last_release": "2025-07",
+        "breaking_changes": false
+      },
+      "footprint": {
+        "initial_download": "12MB",
+        "lazy_loading": true,
+        "wasm_size": "10MB"
+      },
+      "ratings": {
+        "capability": 5,
+        "ux": 4,
+        "privacy": 5,
+        "accessibility": 4,
+        "offline_readiness": 5
+      },
+      "tags": ["jupyter", "python", "education", "data_science"]
+    },
+    {
+      "id": "ohif_viewer",
+      "name": "OHIF Viewer",
+      "url": "https://ohif.org/",
+      "category": "Healthcare",
+      "subcategory": "Medical Imaging",
+      "one_line_purpose": "Web-based DICOM medical image viewer",
+      "audiences": ["healthcare_professionals", "radiologists", "researchers"],
+      "key_capabilities": [
+        "Multi-planar reconstruction",
+        "3D volume rendering",
+        "Measurement and annotation tools",
+        "Real-time collaboration",
+        "DICOM standard compliance"
+      ],
+      "tech_stack": ["WebGL", "WebWorkers", "WebAssembly"],
+      "performance_notes": "Hardware-accelerated rendering of large medical datasets",
+      "performance_source": "https://ohif.org/platform/",
+      "offline_pwa": {
+        "offline_capable": true,
+        "pwa_installable": true,
+        "storage_strategy": "study_caching"
+      },
+      "privacy_posture": {
+        "data_processing": "local_only",
+        "telemetry": "none",
+        "external_requests": "none_required"
+      },
+      "accessibility": {
+        "wcag_level": "A",
+        "keyboard_navigation": true,
+        "screen_reader": true,
+        "rtl_support": false
+      },
+      "licensing": {
+        "type": "open_source",
+        "license": "MIT",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": [],
+        "sandboxing": "browser_sandbox"
+      },
+      "safety_considerations": [
+        "HIPAA compliance",
+        "No PHI transmission",
+        "FDA 510k pathway compliance",
+        "Medical device regulations"
+      ],
+      "maturity": {
+        "stage": "production",
+        "last_release": "2025-07",
+        "breaking_changes": false
+      },
+      "footprint": {
+        "initial_download": "8MB",
+        "lazy_loading": true,
+        "wasm_size": "3MB"
+      },
+      "ratings": {
+        "capability": 5,
+        "ux": 4,
+        "privacy": 5,
+        "accessibility": 3,
+        "offline_readiness": 4
+      },
+      "tags": ["medical", "dicom", "imaging", "healthcare"]
+    },
+    {
+      "id": "global_forest_watch",
+      "name": "Global Forest Watch",
+      "url": "https://www.globalforestwatch.org/",
+      "category": "Environmental",
+      "subcategory": "Conservation",
+      "one_line_purpose": "Real-time forest monitoring and deforestation alerts",
+      "audiences": ["environmental_groups", "researchers", "policymakers"],
+      "key_capabilities": [
+        "Satellite imagery analysis",
+        "Deforestation alerts",
+        "Biodiversity mapping",
+        "Carbon stock estimation",
+        "Community monitoring tools"
+      ],
+      "tech_stack": ["WebGL", "Mapbox", "WebWorkers", "JavaScript"],
+      "performance_notes": "Real-time processing of satellite feeds, global scale mapping",
+      "performance_source": "https://www.globalforestwatch.org/about/",
+      "offline_pwa": {
+        "offline_capable": false,
+        "pwa_installable": false,
+        "storage_strategy": "key_datasets_cached"
+      },
+      "privacy_posture": {
+        "data_processing": "cloud_based",
+        "telemetry": "anonymous_usage",
+        "external_requests": "satellite_data_apis"
+      },
+      "accessibility": {
+        "wcag_level": "AA",
+        "keyboard_navigation": true,
+        "screen_reader": true,
+        "rtl_support": true
+      },
+      "licensing": {
+        "type": "open_data",
+        "license": "CC BY 4.0",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": ["geolocation"],
+        "sandboxing": "browser_sandbox"
+      },
+      "safety_considerations": [
+        "Conservation focus",
+        "Anti-poaching location protection",
+        "Community safety protocols"
+      ],
+      "maturity": {
+        "stage": "production",
+        "last_release": "2025-08",
+        "breaking_changes": false
+      },
+      "footprint": {
+        "initial_download": "10MB",
+        "lazy_loading": true,
+        "wasm_size": "0MB"
+      },
+      "ratings": {
+        "capability": 5,
+        "ux": 4,
+        "privacy": 5,
+        "accessibility": 4,
+        "offline_readiness": 3
+      },
+      "tags": ["environmental", "gis", "conservation", "satellites"]
+    }
+  ],
+  "categories": {
+    "scientific_computing": {
+      "name": "Scientific Computing",
+      "description": "Tools for research, simulation, and data analysis",
+      "tool_count": 2,
+      "webgpu_adoption": 95,
+      "offline_capability": 85
+    },
+    "education": {
+      "name": "Education", 
+      "description": "Learning and teaching tools for all levels",
+      "tool_count": 3,
+      "webgpu_adoption": 70,
+      "offline_capability": 75
+    },
+    "ai_ml": {
+      "name": "AI/ML",
+      "description": "Machine learning and artificial intelligence tools",
+      "tool_count": 1,
+      "webgpu_adoption": 90,
+      "offline_capability": 90
+    },
+    "creative": {
+      "name": "Creative",
+      "description": "Media creation and editing tools",
+      "tool_count": 1,
+      "webgpu_adoption": 85,
+      "offline_capability": 50
+    },
+    "engineering": {
+      "name": "Engineering",
+      "description": "CAD, simulation, and design tools",
+      "tool_count": 1,
+      "webgpu_adoption": 100,
+      "offline_capability": 60
+    },
+    "productivity": {
+      "name": "Productivity",
+      "description": "General productivity and development tools", 
+      "tool_count": 1,
+      "webgpu_adoption": 40,
+      "offline_capability": 80
+    },
+    "healthcare": {
+      "name": "Healthcare",
+      "description": "Medical and health-related applications",
+      "tool_count": 1,
+      "webgpu_adoption": 80,
+      "offline_capability": 80
+    },
+    "environmental": {
+      "name": "Environmental",
+      "description": "Conservation and environmental monitoring",
+      "tool_count": 1,
+      "webgpu_adoption": 75,
+      "offline_capability": 60
+    }
+  },
+  "technology_adoption": {
+    "webgpu": {
+      "total_tools": 8,
+      "percentage": 80,
+      "performance_impact": "3-10x improvement in graphics/compute tasks"
+    },
+    "webassembly": {
+      "total_tools": 6,
+      "percentage": 60,
+      "performance_impact": "Near-native execution speed"
+    },
+    "pwa": {
+      "total_tools": 7,
+      "percentage": 70,
+      "offline_capable": 6
+    }
+  }
+}
+        "initial_download": "2MB",
+        "lazy_loading": true,
+        "wasm_size": "0MB"
+      },
+      "ratings": {
+        "capability": 5,
+        "ux": 4,
+        "privacy": 5,
+        "accessibility": 2,
+        "offline_readiness": 3
+      },
+      "tags": ["webgpu", "physics", "simulation", "education"]
+    },
+    {
+      "id": "pyodide",
+      "name": "Pyodide",
+      "url": "https://pyodide.org/",
+      "category": "Scientific Computing",
+      "subcategory": "Data Science",
+      "one_line_purpose": "Full Python scientific computing environment in browser",
+      "audiences": ["scientists", "educators", "data_scientists"],
+      "key_capabilities": [
+        "NumPy, Pandas, SciPy, Matplotlib running natively",
+        "Jupyter-like notebook interface",
+        "Package installation via micropip",
+        "JavaScript ⟺ Python interoperability"
+      ],
+      "tech_stack": ["WebAssembly", "CPython 3.11", "WebWorkers"],
+      "performance_notes": "3-5x slower than native Python, enables complex scientific workflows",
+      "performance_source": "https://pyodide.org/en/stable/project/roadmap.html",
+      "offline_pwa": {
+        "offline_capable": true,
+        "pwa_installable": true,
+        "storage_strategy": "indexeddb_packages"
+      },
+      "privacy_posture": {
+        "data_processing": "local_execution",
+        "telemetry": "optional",
+        "external_requests": "package_downloads_only"
+      },
+      "accessibility": {
+        "wcag_level": "AA",
+        "keyboard_navigation": true,
+        "screen_reader": true,
+        "rtl_support": false
+      },
+      "licensing": {
+        "type": "open_source",
+        "license": "Mozilla Public License 2.0",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": [],
+        "sandboxing": "wasm_sandbox"
+      },
+      "safety_considerations": [
+        "Memory-safe execution",
+        "No filesystem access outside WASM",
+        "Package signature verification"
+      ],
+      "maturity": {
+        "stage": "stable",
+        "last_release": "2025-07",
+        "breaking_changes": false
+      },
+      "footprint": {
+        "initial_download": "10MB",
+        "lazy_loading": true,
+        "wasm_size": "8MB"
+      },
+      "ratings": {
+        "capability": 5,
+        "ux": 4,
+        "privacy": 5,
+        "accessibility": 4,
+        "offline_readiness": 5
+      },
+      "tags": ["webassembly", "python", "data_science", "jupyter"]
+    },
+    {
+      "id": "tinkercad",
+      "name": "Tinkercad",
+      "url": "https://www.tinkercad.com/",
+      "category": "Education",
+      "subcategory": "K-12",
+      "one_line_purpose": "Browser-based 3D design, electronics simulation, and coding education",
+      "audiences": ["educators", "students", "makers"],
+      "key_capabilities": [
+        "Drag-and-drop 3D modeling",
+        "Arduino circuit simulation",
+        "Block-based programming (Scratch-like)",
+        "3D printing export (STL)"
+      ],
+      "tech_stack": ["WebGL", "JavaScript", "Cloud sync"],
+      "performance_notes": "Real-time 3D rendering on low-end devices",
+      "performance_source": "https://www.tinkercad.com/learn/overview",
+      "offline_pwa": {
+        "offline_capable": false,
+        "pwa_installable": false,
+        "storage_strategy": "cloud_sync_required"
+      },
+      "privacy_posture": {
+        "data_processing": "cloud_based",
+        "telemetry": "usage_analytics",
+        "external_requests": "autodesk_services"
+      },
+      "accessibility": {
+        "wcag_level": "AA",
+        "keyboard_navigation": true,
+        "screen_reader": true,
+        "rtl_support": false
+      },
+      "licensing": {
+        "type": "freemium",
+        "license": "Proprietary",
+        "commercial_use": "education_only"
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": [],
+        "sandboxing": "browser_sandbox"
+      },
+      "safety_considerations": [
+        "COPPA compliant",
+        "Age-appropriate content filters",
+        "Teacher oversight tools",
+        "No personal data beyond accounts"
+      ],
+      "maturity": {
+        "stage": "production",
+        "last_release": "2025-08",
+        "breaking_changes": false
+      },
+      "footprint": {
+        "initial_download": "5MB",
+        "lazy_loading": true,
+        "wasm_size": "0MB"
+      },
+      "ratings": {
+        "capability": 4,
+        "ux": 5,
+        "privacy": 4,
+        "accessibility": 4,
+        "offline_readiness": 2
+      },
+      "tags": ["education", "3d_modeling", "electronics", "kids"]
+    },
+    {
+      "id": "web_llm",
+      "name": "Web LLM",
+      "url": "https://webllm.mlc.ai/",
+      "category": "AI/ML",
+      "subcategory": "Language Models",
+      "one_line_purpose": "Run large language models directly in browser with GPU acceleration",
+      "audiences": ["data_scientists", "developers", "researchers"],
+      "key_capabilities": [
+        "Local LLM inference using WebGPU",
+        "OpenAI API compatibility", 
+        "Structured JSON generation",
+        "Support for Llama 3, Phi 3, Gemma, Mistral"
+      ],
+      "tech_stack": ["WebGPU", "WebAssembly", "TVM Unity"],
+      "performance_notes": "4GB quantized models, ~6GB RAM requirement, 62 tokens/second",
+      "performance_source": "https://github.com/mlc-ai/web-llm",
+      "offline_pwa": {
+        "offline_capable": true,
+        "pwa_installable": true,
+        "storage_strategy": "model_caching"
+      },
+      "privacy_posture": {
+        "data_processing": "local_only",
+        "telemetry": "none",
+        "external_requests": "model_downloads_only"
+      },
+      "accessibility": {
+        "wcag_level": "AA",
+        "keyboard_navigation": true,
+        "screen_reader": true,
+        "rtl_support": true
+      },
+      "licensing": {
+        "type": "open_source",
+        "license": "Apache 2.0",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": ["webgpu"],
+        "sandboxing": "wasm_sandbox"
+      },
+      "safety_considerations": [
+        "Content filtering available",
+        "Rate limiting",
+        "No training data exposure",
+        "Model-specific safety guidelines"
+      ],
+      "maturity": {
+        "stage": "beta",
+        "last_release": "2024-12",
+        "breaking_changes": true
+      },
+      "footprint": {
+        "initial_download": "500MB",
+        "lazy_loading": true,
+        "wasm_size": "4-8GB"
+      },
+      "ratings": {
+        "capability": 5,
+        "ux": 4,
+        "privacy": 5,
+        "accessibility": 4,
+        "offline_readiness": 5
+      },
+      "tags": ["webgpu", "llm", "ai", "privacy"]
+    },
+    {
+      "id": "clipchamp",
+      "name": "Clipchamp",
+      "url": "https://clipchamp.com/",
+      "category": "Creative",
+      "subcategory": "Video Editing",
+      "one_line_purpose": "Web-based video editor with professional features",
+      "audiences": ["creators", "marketers", "educators"],
+      "key_capabilities": [
+        "Multi-track timeline editing",
+        "4K video export",
+        "Stock media library",
+        "Real-time collaboration",
+        "Green screen and motion graphics"
+      ],
+      "tech_stack": ["WebCodecs", "WebGL", "WebWorkers"],
+      "performance_notes": "Hardware-accelerated encoding/decoding, 4K real-time preview",
+      "performance_source": "https://clipchamp.com/en/blog/",
+      "offline_pwa": {
+        "offline_capable": true,
+        "pwa_installable": true,
+        "storage_strategy": "local_processing_optional_cloud"
+      },
+      "privacy_posture": {
+        "data_processing": "hybrid",
+        "telemetry": "usage_analytics",
+        "external_requests": "stock_media_cloud_features"
+      },
+      "accessibility": {
+        "wcag_level": "AA",
+        "keyboard_navigation": true,
+        "screen_reader": true,
+        "rtl_support": false
+      },
+      "licensing": {
+        "type": "freemium",
+        "license": "Proprietary",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": ["camera", "microphone"],
+        "sandboxing": "browser_sandbox"
+      },
+      "safety_considerations": [
+        "Content filtering",
+        "Copyright detection",
+        "User-generated content moderation"
+      ],
+      "maturity": {
+        "stage": "production",
+        "last_release": "2025-08",
+        "breaking_changes": false
+      },
+      "footprint": {
+        "initial_download": "20MB",
+        "lazy_loading": true,
+        "wasm_size": "5MB"
+      },
+      "ratings": {
+        "capability": 4,
+        "ux": 5,
+        "privacy": 4,
+        "accessibility": 4,
+        "offline_readiness": 3
+      },
+      "tags": ["video_editing", "webcodecs", "collaboration"]
+    },
+    {
+      "id": "onshape",
+      "name": "Onshape",
+      "url": "https://www.onshape.com/",
+      "category": "Engineering",
+      "subcategory": "CAD",
+      "one_line_purpose": "Professional cloud-native CAD platform for product development",
+      "audiences": ["engineers", "designers", "manufacturers"],
+      "key_capabilities": [
+        "Parametric 3D modeling",
+        "Assembly design and simulation",
+        "Real-time collaboration",
+        "Version control and branching",
+        "Manufacturing integration"
+      ],
+      "tech_stack": ["WebGL", "WebAssembly", "WebWorkers"],
+      "performance_notes": "Complex assemblies with 1000+ parts, real-time collaboration",
+      "performance_source": "https://www.onshape.com/en/resource-center/",
+      "offline_pwa": {
+        "offline_capable": false,
+        "pwa_installable": false,
+        "storage_strategy": "cloud_native"
+      },
+      "privacy_posture": {
+        "data_processing": "cloud_based",
+        "telemetry": "usage_analytics",
+        "external_requests": "platform_services"
+      },
+      "accessibility": {
+        "wcag_level": "A",
+        "keyboard_navigation": true,
+        "screen_reader": false,
+        "rtl_support": false
+      },
+      "licensing": {
+        "type": "freemium",
+        "license": "Proprietary",
+        "commercial_use": true
+      },
+      "security": {
+        "csp_compliant": true,
+        "permissions_required": [],
+        "sandboxing": "browser_sandbox"
+      },
+      "safety_considerations": [
+        "IP protection",
+        "Enterprise data controls",
+        "Access audit trails"
+      ],
+      "maturity": {
+        "stage": "production",
+        "last_release": "2025-08",
+        "breaking_changes": false
+      },
+      "footprint": {
+        

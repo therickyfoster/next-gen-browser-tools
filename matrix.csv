@@ -1,0 +1,25 @@
+Tool Name,Category,WebGPU,WebAssembly,PWA,Offline,Privacy Score,Accessibility,Open Source,Performance,Footprint MB,Last Updated
+Compute.toys,Scientific Computing,Yes,No,No,Partial,5,2,Yes,60fps particles,2,2024-05
+Pyodide,Scientific Computing,No,Yes,Yes,Yes,5,4,Yes,3-5x slower than native,10,2025-07
+Tinkercad,Education,No,No,No,No,4,4,No,Real-time 3D,5,2025-08
+Web LLM,AI/ML,Yes,Yes,Yes,Yes,5,4,Yes,62 tokens/sec,500-8000,2024-12
+Clipchamp,Creative,Yes,Yes,Yes,Partial,4,4,No,4K real-time,20,2025-08
+Onshape,Engineering,No,Yes,No,No,4,3,No,1000+ part assemblies,15,2025-08
+VS Code Web,Productivity,No,Yes,Yes,Yes,4,5,Yes,Near-desktop perf,5,2025-08
+JupyterLite,Education,No,Yes,Yes,Yes,5,4,Yes,WASM performance,12,2025-07
+OHIF Viewer,Healthcare,Yes,Yes,Yes,Yes,5,3,Yes,Hardware accelerated,8,2025-07
+Global Forest Watch,Environmental,Yes,No,No,Partial,5,4,No,Real-time satellite,10,2025-08
+Scratch for Web,Education,No,No,Yes,Yes,5,5,Yes,60fps animations,3,2025-08
+Emergency Response Sim,Government,No,No,Yes,Yes,5,5,No,50+ concurrent users,25,2025-06
+ArcGIS Online,Government,Yes,No,No,Partial,4,5,No,Millions of features,2-5,2025-08
+Soundtrap,Creative,No,No,No,Partial,3,4,No,Low-latency audio,10,2025-08
+Spline,Creative,Yes,Yes,No,No,3,2,No,60fps 3D animation,5,2025-08
+CloudShark,Security,No,Yes,Yes,Yes,4,3,Yes,GB-scale analysis,15,2025-08
+Microsoft Office Web,Productivity,No,Yes,Yes,Yes,3,5,No,Near-native performance,20,2025-08
+Google Workspace,Productivity,No,No,Yes,Yes,3,5,No,Instant loading,15,2025-08
+TensorFlow.js,AI/ML,Yes,Yes,Yes,Yes,5,4,Yes,Hardware acceleration,0.2-50,2025-08
+Observable,Data Visualization,Yes,No,No,Partial,3,4,No,Millions of points,1-2,2025-08
+CADmium,Engineering,Yes,Yes,Yes,Yes,5,2,Yes,GPU rendering,5,2024-05
+WASM Bioinformatics,Scientific Computing,No,Yes,Yes,Yes,5,3,Yes,80% native speed,15-50,2025-03
+Climate Interactive,Scientific Computing,No,Yes,No,Partial,5,4,No,Real-time modeling,8,2025-01
+Inpaint-web,Creative,Yes,Yes,No,No,4,3,Yes,AI image processing,5,2024-05
