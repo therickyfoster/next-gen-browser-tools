@@ -84,7 +84,7 @@ const performanceData = toolsData.tools.map(tool => ({
 | **Scientists** 🔬 | Pyodide, Compute.toys, Web LLM | No software installation, reproducible research |
 | **Educators** 👨‍🏫 | Tinkercad, Scratch, JupyterLite | Works on any device, instant collaboration |
 | **Engineers** ⚙️ | Onshape, CADmium | Real-time collaboration, version control |
-| **Healthcare** 🏥 | OHIF Viewer | HIPAA compliance, no PHI transmission |
+| **Healthcare** 🏥 | [OHIF Viewer](https://viewer.ohif.org) | HIPAA compliance, no PHI transmission |
 | **Creators** 🎨 | Clipchamp, Spline | Professional features, no expensive software |
 
 ## 🛡️ Safety & Privacy Framework
