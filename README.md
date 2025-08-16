@@ -38,7 +38,7 @@ next-gen-browser-tools/
 ### For Developers
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/next-gen-browser-tools.git
+git clone https://github.com/therickyfoster/next-gen-browser-tools.git
 
 # Load the dataset
 import toolsData from './tools.json';
@@ -227,16 +227,16 @@ Submit new tools via GitHub issues with:
 ## 📞 Support & Contact
 
 - **General Questions**: Open a GitHub issue
-- **Security Concerns**: security@nextgen-browser-tools.org
-- **Accessibility Issues**: accessibility@nextgen-browser-tools.org
-- **Research Collaboration**: research@nextgen-browser-tools.org
+- **Security Concerns**: security@planetaryrestorationarchive.com
+- **Accessibility Issues**: accessibility@planetaryrestorationarchive.com
+- **Research Collaboration**: research@planetaryrestorationarchive.com
 
 ## 🏗️ Technical Implementation
 
 ### API Integration Example
 ```javascript
 // Fetch latest tool data
-const response = await fetch('https://api.nextgen-browser-tools.org/v1/tools');
+const response = await fetch('https://api.planetaryrestorationarchive.com/next-gen-browser-tools/v1/tools');
 const toolsData = await response.json();
 
 // Filter by technology
@@ -296,12 +296,12 @@ jobs:
 If you use this catalog in academic research, please cite:
 
 ```bibtex
-@misc{nextgen_browser_tools_2025,
+@misc{next_gen_browser_tools_2025,
   title={Next-Gen In-Browser Compute: A Future-Proof Catalog},
-  author={{NextGen Browser Tools Research Group}},
+  author={{Ricky Foster}},
   year={2025},
   month={August},
-  url={https://github.com/your-org/next-gen-browser-tools},
+  url={https://github.com/therickyfoster/next-gen-browser-tools},
   note={Version 1.0, DOI: 10.5281/zenodo.xxxxx}
 }
 ```
@@ -407,7 +407,7 @@ Stay informed about the latest developments:
 - **Annual Report**: Comprehensive ecosystem state assessment
 - **Breaking News**: Critical security updates and major announcements
 
-Subscribe at: https://nextgen-browser-tools.org/newsletter
+Subscribe at: https://planetaryrestorationarchive.com/newsletter
 
 ---
 
