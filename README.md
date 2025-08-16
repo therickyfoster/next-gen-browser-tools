@@ -83,7 +83,7 @@ const performanceData = toolsData.tools.map(tool => ({
 |------------|-----------|--------------|
 | **Scientists** 🔬 | [Pyodide](https://pyodide.org/en/stable), [Compute.toys](https://compute.toys), [Web LLM](https://webllm.mlc.ai) | No software installation, reproducible research |
 | **Educators** 👨‍🏫 | [Tinkercad](https://www.tinkercad.com), [Scratch](https://scratch.mit.edu), [JupyterLite](https://jupyter.org/try-jupyter/lab)| Works on any device, instant collaboration |
-| **Engineers** ⚙️ | [Onshape](https://www.onshape.com/en), [CADmium](https://github.com/CADmium-Co/CADmium)( | Real-time collaboration, version control |
+| **Engineers** ⚙️ | [Onshape](https://www.onshape.com/en), [CADmium](https://github.com/CADmium-Co/CADmium) | Real-time collaboration, version control |
 | **Healthcare** 🏥 | [OHIF Viewer](https://viewer.ohif.org) | HIPAA compliance, no PHI transmission |
 | **Creators** 🎨 | [Clipchamp](https://clipchamp.com/en), [Spline](https://spline.design) | Professional features, no expensive software |
 
